@@ -27,4 +27,15 @@ register_nav_menus(
         'footer-menu' => __( 'Footer Menu', 'funnywp' )
     )
 );
+
+register_sidebar( array(
+    'name' => __('Sidebar widget area', 'funnywp' ),
+    'id' => 'sidebar-primary',
+    'description' => __('Sidebar widget area', 'funnywp' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+
 ?>

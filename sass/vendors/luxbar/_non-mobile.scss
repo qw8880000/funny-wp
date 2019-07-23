@@ -1,0 +1,54 @@
+@media screen and (min-width: $luxbar-breakpoint) {
+    .#{$luxbar-css-prefix}-navigation {
+        flex-flow: row;
+        justify-content: flex-end;
+    }
+
+    .#{$luxbar-css-prefix}-hamburger {
+        display: none;
+    }
+
+    .#{$luxbar-css-prefix}-checkbox {
+        &:not(:checked) ~.#{$luxbar-css-prefix}-menu {
+            overflow: visible;
+        }
+
+        &:checked ~.#{$luxbar-css-prefix}-menu {
+          height: $luxbar-height;
+        }
+    }
+
+    .#{$luxbar-css-prefix}-menu {
+        .#{$luxbar-css-prefix}-item {
+            border-top: 0;
+        }
+
+    }
+
+    .#{$luxbar-css-prefix}-menu-right .#{$luxbar-css-prefix}-header {
+        margin-right: auto;
+    }
+
+    .dropdown {
+        height: $luxbar-height;
+
+        &:hover > ul {
+            position: absolute;
+            left: 0;
+            top: $luxbar-height;
+            padding: 0;
+        }
+
+        > ul {
+            display: none;
+
+            .#{$luxbar-css-prefix}-item {
+                padding: 5px 10px;
+
+                a {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}

@@ -16,7 +16,7 @@
 ?>
 <?php get_header(); ?>
 
-<section id="main" class="main">
+<section id="main" class="main cd-main-content">
     <?php if ( have_posts() ) {
 
         // Load posts loop.
@@ -35,8 +35,7 @@
 
     }
     ?>
-
-    </main><!-- .site-main -->
+    </main>
 </section>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

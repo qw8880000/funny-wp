@@ -8,27 +8,28 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <header class="header cd-header">
+<!--        <div class="header-branding">
+            <?php /*if ( has_custom_logo() ) : */?>
+                <div class="header-logo"><?php /*the_custom_logo(); */?></div>
+            <?php /*endif; */?>
 
-<header class="header">
-    <div class="header-branding">
-        <?php if ( has_custom_logo() ) : ?>
-            <div class="header-logo"><?php the_custom_logo(); ?></div>
-        <?php endif; ?>
+            <p class="header-title"><a href="<?php /*echo esc_url( home_url( '/' ) ); */?>" rel="home"><?php /*bloginfo( 'name' ); */?></a></p>
+            <p class="header-description"><?php /*bloginfo( 'description' ); */?></p>
+        </div>-->
 
-        <p class="header-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-        <p class="header-description"><?php bloginfo( 'description' ); ?></p>
-    </div>
-
-    <nav id="header-navigation" class="header-navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'funnywp' ); ?>">
-        <?php
-        wp_nav_menu(
-            array(
-                'theme_location' => 'header-menu',
-                'menu_class'     => 'header-menu',
-                'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-            )
-        );
-        ?>
-    </nav>
-</header>
+        <!-- header navigation -->
+        <nav class="header-nav cd-main-nav-wrapper">
+                <?php
+                wp_nav_menu(
+                    array('container' => '',
+                        'theme_location' => 'header-menu',
+                        'menu_class'     => 'cd-main-nav',
+                        'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    )
+                );
+                ?>
+        </nav>
+        <a href="#0" class="cd-nav-trigger"><span></span></a>
+    </header>
 

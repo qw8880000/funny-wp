@@ -19,15 +19,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /* ==========================================================================
- * Vendors
- * =========================================================================*/
-@import "sass/vendors/bootstrap/bootstrap-custom";
-@import "sass/vendors/secondary-sliding-navigation/style.scss";
-
-/* ==========================================================================
  * Helpers
  * =========================================================================*/
 @import "sass/helpers/variables";
+
+/* ==========================================================================
+ * Vendors
+ * =========================================================================*/
+@import "sass/vendors/bootstrap/bootstrap-custom";
+@import "sass/vendors/hamburgers/hamburgers";
+
 
 /* ==========================================================================
  * Elements

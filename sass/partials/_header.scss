@@ -1,5 +1,116 @@
+@charset "UTF-8";
+
+$height-header: 6rem;
+$height-header-sm: 6rem;
+/*-------------------------------- Header
+ */
 .header {
+  /* the flex item setting of .blog */
   flex: 0 0 auto;
-  min-height: 5rem;
-  background-color: $color__background-header;
+
+  display: flex;
+  align-items: center;
+  min-height: $height-header; // 保证无子元素时也有高度
+  color: $color-header-fg;
+  background-color: $color-header-bg;
+}
+
+/*-------------------------------- Header Branding
+ */
+$size-header-description: .8rem;
+$size-header-title: 2 * $size-header-description;
+
+.header-branding-wrapper {
+  /* the flex item setting of .header */
+  flex: 0 0 auto;
+}
+
+.header-branding {
+}
+
+.header-branding a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-title {
+  margin: 0;
+  padding: 0;
+  font-size: $size-header-title;
+}
+
+.header-description {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: $size-header-description;
+}
+
+.header-btn-hamburger {
+  display: none;
+}
+
+/*-------------------------------- Header Navigation
+*/
+$height-header-nav: $height-header;
+
+.header-nav {
+  /* items are aliged to the right （https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container）*/
+  margin-left: auto;
+
+  //position: absolute;
+  //right: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul.header-nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.header-nav-menu-item {
+  display: inline-block;
+  height: $height-header-nav;
+  line-height: $height-header-nav;
+  padding: 0 1rem;
+
+  &:hover {
+    background-color: $color-header-bg-hover;
+  }
+}
+
+/* ---------------- Breakpoint
+ */
+@include media-breakpoint-down(sm) {
+  .header {
+    display: block;
+    height: auto;
+    min-height: $height-header-sm;  // 保证无子元素时也有高度
+  }
+
+  .header-branding-wrapper {
+    display: flex;
+    align-items: center;
+    height: $height-header-sm;
+  }
+
+  .header-btn-hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-nav.is-active {
+    display: block;
+    width: 100%;
+  }
+
 }

@@ -1,6 +1,30 @@
 //
 // Color
 //
-$color__background-body: $gray-300;
-$color__background-header: $white;
-$color__background-footer: $white;
+
+$white: #fff;
+
+$cyan: #006064;
+$cyan-2: #00838f;
+
+
+$color-body-bg: #eee;
+
+$color-header-fg: $white;
+$color-header-bg: $cyan;
+$color-header-bg-hover: $cyan-2;
+
+$color-footer-bg: $white;
+
+// hamburgers custom
+// ==================================================
+$hamburger-padding-x           : 15px;
+$hamburger-padding-y           : 15px;
+$hamburger-layer-width         : 30px;
+$hamburger-layer-height        : 3px;
+$hamburger-layer-spacing       : 6px;
+$hamburger-layer-color         : $color-header-fg;
+$hamburger-layer-border-radius : 0;
+// $hamburger-hover-opacity       : 0.7 !default;
+// $hamburger-active-layer-color  : $hamburger-layer-color !default;
+// $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;

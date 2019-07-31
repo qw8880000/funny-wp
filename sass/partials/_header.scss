@@ -1,5 +1,125 @@
+@charset "UTF-8";
+
+$height-header: 5rem;
+$height-header-sm: 5rem;
+$height-header-nav: $height-header;
+
+$size-header-description: .8rem;
+$size-header-title: 1.5rem;
+
+$padding-left-branding: 1.5rem;
+/*-------------------------------- Header
+ */
 .header {
+  /* the flex item setting of .blog */
   flex: 0 0 auto;
-  min-height: 5rem;
-  background-color: $color__background-header;
+
+  display: flex;
+  align-items: center;
+  min-height: 5rem; // 保证无子元素时也有高度
+  color: $color-header-fg;
+  background-color: $color-header-bg;
+}
+
+/*-------------------------------- Header Branding
+ */
+.header-branding-wrapper {
+  /* the flex item setting of .header */
+  flex: 0 0 auto;
+  padding-left: $padding-left-branding;
+}
+
+.header-branding {
+}
+
+.header-branding a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-title {
+  margin: 0;
+  padding: 0;
+  font-size: $size-header-title;
+}
+
+.header-description {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: $size-header-description;
+}
+
+.header-btn-hamburger {
+  display: none;
+}
+
+/*-------------------------------- Header Navigation
+*/
+.header-nav {
+  /* items are aliged to the right （https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container）*/
+  margin-left: auto;
+}
+
+.header-nav a {
+  display: block;
+  padding: 0 1rem;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+ul.header-nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.header-nav-menu-item {
+  display: inline-block;
+  height: $height-header-nav;
+  line-height: $height-header-nav;
+
+  &:hover {
+    background-color: $color-header-bg-hover;
+  }
+}
+
+/* ---------------- Breakpoint
+ */
+@include media-breakpoint-down(sm) {
+  .header {
+    display: block;
+    height: auto;
+    min-height: 5rem;  // 保证无子元素时也有高度
+  }
+
+  .header-branding-wrapper {
+    display: flex;
+    align-items: center;
+    height: $height-header-sm;
+  }
+
+  .header-btn-hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header-nav {
+    height: 0;
+
+    transition: height 0.4s ease-in-out;
+  }
+
+  .header-nav a {
+    display: block;
+    padding: 1rem $padding-left-branding;
+  }
+
+  li.header-nav-menu-item {
+    display: block;
+    height: auto;
+    line-height: normal;
+  }
+
 }

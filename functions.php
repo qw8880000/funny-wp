@@ -16,9 +16,8 @@
 function funnywp_scripts() {
     wp_enqueue_style( 'funnywp-style', get_stylesheet_uri() );
 
-    wp_enqueue_script( 'funnywp-modernizr', get_template_directory_uri() . '/js/secondary-sliding-navigation/modernizr.js', array(), '1.1', false );
-    wp_enqueue_script( 'funnywp-jquery', get_template_directory_uri() . '/js/secondary-sliding-navigation/jquery-2.1.1.js', array(), '1.1', false );
-    wp_enqueue_script( 'funnywp-main', get_template_directory_uri() . '/js/secondary-sliding-navigation/main.js', array(), '1.1', false );
+    wp_enqueue_script( 'funnywp-3th-transition-auto', get_template_directory_uri() . '/js/transition-auto.js', array(), '1.1', false );
+    wp_enqueue_script( 'funnywp-header-nav', get_template_directory_uri() . '/js/header-nav.js', array(), '1.1', false );
 }
 
 //add_action( 'wp_head', 'funnywp_add_scripts' );
@@ -30,15 +29,15 @@ add_action( 'wp_enqueue_scripts', 'funnywp_scripts' );
  */
 register_nav_menus(
     array(
-        'header-menu' => __( 'Header Menu', 'funnywp' ),
-        'footer-menu' => __( 'Footer Menu', 'funnywp' )
+        'header-nav' => __( 'Header Nav', 'funnywp' ),
+        'footer-nav' => __( 'Footer Nav', 'funnywp' )
     )
 );
-/*function nav_item_css_class_filter( $classes, $item, $args, $depth ) {
-    array_push( $classes, 'luxbar-item' );
+function nav_item_css_class_filter( $classes, $item, $args, $depth ) {
+    array_push( $classes, 'header-nav-menu-item' );
     return $classes;
 }
-add_filter( 'nav_menu_css_class', 'nav_item_css_class_filter' );*/
+add_filter( 'nav_menu_css_class', 'nav_item_css_class_filter' );
 
 
 /**

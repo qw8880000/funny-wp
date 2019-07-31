@@ -105,12 +105,14 @@ li.header-nav-menu-item {
   }
 
   .header-nav {
-    display: none;
+    height: 0;
   }
 
-  .header-nav.is-active {
+  li.header-nav-menu-item {
     display: block;
-    width: 100%;
+    height: auto;
+    line-height: normal;
+    padding: 1rem 4rem;
   }
 
 }

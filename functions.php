@@ -16,6 +16,7 @@
 function funnywp_scripts() {
     wp_enqueue_style( 'funnywp-style', get_stylesheet_uri() );
 
+    wp_enqueue_script( 'funnywp-3th-transition-auto', get_template_directory_uri() . '/js/transition-to-from-auto.js', array(), '1.1', false );
     wp_enqueue_script( 'funnywp-header-nav', get_template_directory_uri() . '/js/header-nav.js', array(), '1.1', false );
 }
 

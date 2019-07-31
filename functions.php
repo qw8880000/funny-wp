@@ -10,7 +10,7 @@
  */
 
 /**
- * Twenty Nineteen only works in WordPress 4.7 or later.
+ * Funny WP only works in WordPress 4.7 or later.
  */
 
 function funnywp_scripts() {

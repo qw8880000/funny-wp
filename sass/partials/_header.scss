@@ -18,7 +18,7 @@ $height-header-sm: 6rem;
 /*-------------------------------- Header Branding
  */
 $size-header-description: .8rem;
-$size-header-title: 2 * $size-header-description;
+$size-header-title: 1.5rem;
 
 .header-branding-wrapper {
   /* the flex item setting of .header */
@@ -106,6 +106,7 @@ li.header-nav-menu-item {
 
   .header-nav {
     height: 0;
+    transition: height 0.4s ease-in-out;
   }
 
   li.header-nav-menu-item {

@@ -3,19 +3,9 @@ function navTransitionToggle() {
 
   $el_header_nav.classList.toggle("is-active");
   if ($el_header_nav.classList.contains("is-active")) {
-    transition({
-      element: "#js-header-nav",
-      prop: "height",
-      style: "height 0.4s ease-in-out",
-      val: "auto"
-    });
+    $el_header_nav.setAttribute('reveal', '')
   } else {
-    transition({
-      element: "#js-header-nav",
-      prop: "height",
-      style: "height 0.4s ease-in-out",
-      val: "0"
-    });
+    $el_header_nav.removeAttribute('reveal');
   }
 }
 

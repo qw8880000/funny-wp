@@ -41,6 +41,25 @@ add_filter( 'nav_menu_css_class', 'nav_item_css_class_filter' );
 
 
 /**
+ * Excerpt
+ */
+function funny_wp_excerpt_more() {
+    $link = sprintf( '<a href="%1$s" class="more-link">%2$s</a>',
+        esc_url( get_permalink( get_the_ID() ) ),
+        'read more'
+        /* translators: %s: Name of current post */
+        //sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ), get_the_title( get_the_ID() ) )
+    );
+    return ' &hellip; ' . $link;
+}
+add_filter( 'excerpt_more', 'funny_wp_excerpt_more' );
+
+function funny_wp_excerpt_length() {
+    return 150;
+}
+add_filter( 'excerpt_length', 'funny_wp_excerpt_length' );
+
+/**
  * Sidebar
  */
 register_sidebar( array(

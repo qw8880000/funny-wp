@@ -16,7 +16,7 @@
 ?>
 <?php get_header(); ?>
 
-<section id="main" class="main">
+<section id="content" class="content">
     <?php if ( have_posts() ) {
 
         // Load posts loop.

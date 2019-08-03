@@ -1,8 +1,6 @@
-
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php
-the_title( '<h1 class="entry-title">', '</h1>' );
-
-the_excerpt();
+the_title( '<h1 class="post-title">', '</h1>' );
 //the_content(
 //    sprintf(
 //        wp_kses(
@@ -25,3 +23,8 @@ the_excerpt();
 //    )
 //);
 ?>
+<div class="post-content">
+    <?php the_excerpt(); ?>
+</div>
+
+</article>

@@ -44,9 +44,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * =========================================================================*/
 @import "sass/partials/header";
 @import "sass/partials/footer";
-@import "sass/partials/main";
+@import "sass/partials/content";
+@import "sass/partials/post";
 
 /* ==========================================================================
  * Pages
  * =========================================================================*/
-@import "sass/pages/default";
+@import "sass/pages/index";

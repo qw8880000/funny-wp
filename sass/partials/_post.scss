@@ -1,7 +1,7 @@
 .post {
   padding: 1rem;
   margin-top: 2rem;
-  background-color: $color-post;
+  background-color: $color-post-bg;
 
   @include z-depth-2dp();
   @include z-depth-transition();
@@ -11,10 +11,7 @@
 }
 
 .post-title {
-}
-
-.post-title-link {
-  color: inherit;
+  font-size: $font-size-post-title;
 }
 
 .post-meta {
@@ -23,10 +20,12 @@
 
 .post-tags {
   display: inline-block;
+  margin-right: 1rem;
 }
 
 .post-categories {
   display: inline-block;
+  margin-right: 1rem;
 }
 
 .post-create_time {

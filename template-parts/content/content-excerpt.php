@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <h1 class="post-title">
-        <?php printf( '<a href="%1$s" class="post-title-link">%2$s</a>',
+        <?php printf( '<a href="%1$s">%2$s</a>',
             esc_url( get_permalink( get_the_ID() ) ),
             the_title( '', '', false )
         ); ?>
@@ -23,7 +23,8 @@
 
         <div class="post-create_time">
             <span class="iconfont iconrili"></span>
-            <?php the_time('Y-m-d H:i:s'); ?>
+            <?php /*the_time('Y-m-d H:i:s'); */?>
+            <?php the_time('Y-m-d'); ?>
         </div>
     </div>
 

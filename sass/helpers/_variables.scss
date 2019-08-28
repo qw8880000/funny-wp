@@ -1,8 +1,6 @@
 
 // Color
 // ===================================================
-
-
 $white:    #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -15,9 +13,11 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000 !default;
 
+$gray-purple: #dad2d8;
+$orange: #f78c3e;
 $cyan: #006064;
-$cyan-2: #00838f;
-$cyan-3: #008e9b;
+$cyan-2: #294853;
+$cyan-3: #0f8b8d;
 
 $color-body-bg: #eee;
 
@@ -25,7 +25,7 @@ $color-header-fg: $white;
 $color-header-bg: $cyan;
 $color-header-bg-hover: $cyan-2;
 
-$color-footer-bg: $white;
+$color-footer-bg: $gray-purple;
 
 $color-post-bg: $white;
 

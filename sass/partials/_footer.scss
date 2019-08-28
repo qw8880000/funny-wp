@@ -2,5 +2,20 @@
   /* the flex item setting of body */
   flex: 0 0 auto;
 
+  padding: 2rem;
   background-color: $color-footer-bg;
+}
+
+.footer-info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+
+  li:not(:first-child) {
+    margin-left: 1rem;
+  }
 }

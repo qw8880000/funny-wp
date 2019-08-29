@@ -48,19 +48,19 @@ add_filter( 'nav_menu_css_class', 'nav_item_css_class_filter' );
 /**
  * Excerpt
  */
-function funny_wp_excerpt_more() {
+function funnywp_excerpt_more() {
     $link = sprintf( '<a href="%1$s" class="post-more-link">%2$s</a>',
         esc_url( get_permalink( get_the_ID() ) ),
         'read more'
     );
     return '......' . $link;
 }
-add_filter( 'excerpt_more', 'funny_wp_excerpt_more' );
+add_filter( 'excerpt_more', 'funnywp_excerpt_more' );
 
-function funny_wp_excerpt_length() {
+function funnywp_excerpt_length() {
     return 150;
 }
-add_filter( 'excerpt_length', 'funny_wp_excerpt_length' );
+add_filter( 'excerpt_length', 'funnywp_excerpt_length' );
 
 /**
  * Sidebar
@@ -77,5 +77,21 @@ register_sidebar( array(
 
 //require get_template_directory() . '/inc/nav_walker.php';
 
+/**
+ * Pagination 分页
+ */
+function funnywp_the_posts_navigation() {
+    // the_posts_pagination();
+    $template = '<nav class="pagination" role="navigation">%1$s</nav>';
+    $links = paginate_links( array(
+        'type' => 'list',
+        'end_size' => 1,
+        'mid_size' => 2,
+        'prev_text' => '<',
+        'next_text' => '>',
+    ) );
+
+    echo sprintf($template, $links);
+}
 
 ?>

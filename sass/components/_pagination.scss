@@ -16,10 +16,18 @@ ul.pagination {
 
 li.page-item {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: $color-pagination-item-bg;
+  // background-color: $color-pagination-item-bg;
 
   &:not(:first-child) {
     margin-left: 2px;
+  }
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+
+  &.current {
+
   }
 }

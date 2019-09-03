@@ -1,0 +1,19 @@
+.pagination-wrapper {
+  display: block;
+}
+
+ul.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.page-item {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0bbadf;
+
+  &:not(:first-child) {
+    margin-left: 2px;
+  }
+}

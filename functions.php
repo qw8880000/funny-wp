@@ -82,16 +82,21 @@ register_sidebar( array(
  */
 function funnywp_the_posts_navigation() {
     // the_posts_pagination();
-    $template = '<nav class="pagination" role="navigation">%1$s</nav>';
+    $template = '<div class="pagination-wrapper" role="navigation"><ul class="pagination">%1$s</ul></div>';
     $links = paginate_links( array(
-        'type' => 'list',
+        'type' => 'array',
         'end_size' => 1,
         'mid_size' => 2,
         'prev_text' => '<',
         'next_text' => '>',
     ) );
+    $page_items = '';
 
-    echo sprintf($template, $links);
+    foreach( $links as $k => $v ) {
+        $page_items .= sprintf( '<li class="page-item">%1$s</li>', $v );
+    }
+
+    echo sprintf( $template, $page_items );
 }
 
 ?>

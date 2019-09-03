@@ -23,12 +23,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * =========================================================================*/
 @import "sass/helpers/variables";
 
-/* ==========================================================================
- * Vendors
- * =========================================================================*/
-@import "sass/vendors/bootstrap/bootstrap-custom";
-@import "sass/vendors/hamburgers/hamburgers";
-@import "sass/vendors/material-shadows/material-shadows";
+@import "sass/helpers/vendors/bootstrap/bootstrap-custom";
+@import "sass/helpers/vendors/hamburgers/hamburgers";
+@import "sass/helpers/vendors/material-shadows/material-shadows";
+
+@import "sass/helpers/mixins";
 
 /* ==========================================================================
  * Elements

@@ -3,11 +3,7 @@
   margin-top: 2rem;
   background-color: $color-post-bg;
 
-  @include z-depth-2dp();
-  @include z-depth-transition();
-  &:hover {
-    @include z-depth-4dp();
-  }
+  @include box-shadow-base();
 }
 
 .post-title {

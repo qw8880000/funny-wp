@@ -1,8 +1,14 @@
 .pagination-wrapper {
   display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: $color-pagination-bg;
+  @include box-shadow-base();
 }
 
 ul.pagination {
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11,7 +17,7 @@ ul.pagination {
 li.page-item {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #0bbadf;
+  background-color: $color-pagination-item-bg;
 
   &:not(:first-child) {
     margin-left: 2px;

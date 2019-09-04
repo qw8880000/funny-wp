@@ -27,7 +27,11 @@ li.page-item {
   display: inline-block;
   padding: 0.5rem 1rem;
 
-  &.current {
+  &:hover {
+    background-color: $color-pagination-item-bg-hover;
+  }
 
+  &.current {
+    background-color: $color-pagination-item-bg-current;
   }
 }

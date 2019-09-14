@@ -2,6 +2,17 @@
   /* the flex item setting of body */
   flex: 1 0 auto;
 
-  margin: auto;
+  margin: 1.5rem auto;
+}
+
+.main-content {
+  display: inline-block;
+  vertical-align: top;
   width: 720px;
+}
+
+.main-sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
 }

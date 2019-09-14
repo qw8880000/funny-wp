@@ -1,3 +1,29 @@
-.sidebar {
+.sidebar-wrapper {
   display: inline-block;
+}
+
+.sidebar-widget-title {
+
+}
+
+.sidebar-widget {
+  margin-bottom: 0.25rem;
+  padding: 0.5rem 0.8rem;
+  background-color: $color-sidebar-widget;
+  @include box-shadow-base();
+}
+
+// sidebar widget: categories
+//==================================
+.widget_categories {
+}
+
+// sidebar widget: archive
+//==================================
+.widget_archive {
+}
+
+// sidebar widget: meta
+//==================================
+.widget_meta {
 }

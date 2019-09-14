@@ -66,13 +66,13 @@ add_filter( 'excerpt_length', 'funnywp_excerpt_length' );
  * Sidebar
  */
 register_sidebar( array(
-    'name' => __('Sidebar widget area', 'funnywp' ),
+    'name' => __( 'Sidebar widget area' ),
     'id' => 'sidebar-primary',
-    'description' => __('Sidebar widget area', 'funnywp' ),
-    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    'after_widget' => '</aside>',
-    'before_title' => '<h3 class="widget-title">',
-    'after_title' => '</h3>',
+    'description' => __( 'Sidebar widget area' ),
+    'before_widget' => '<div id="%1$s" class="sidebar-widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="sidebar-widget-title">',
+    'after_title' => '</h4>',
 ) );
 
 //require get_template_directory() . '/inc/nav_walker.php';

@@ -2,17 +2,36 @@
   /* the flex item setting of body */
   flex: 1 0 auto;
 
+  display: flex;
+  align-items: flex-start;
   margin: 1.5rem auto;
 }
 
 .main-content {
-  display: inline-block;
-  vertical-align: top;
   width: 720px;
 }
 
 .main-sidebar {
-  display: inline-block;
-  vertical-align: top;
+  margin-left: $margin-base;
   width: 320px;
+}
+
+/* ---------------- Breakpoint
+ */
+@include media-breakpoint-down(sm) {
+  .main {
+    display: block;
+    margin: 1.5rem 0.8rem;
+  }
+
+  .main-content {
+    display: block;
+    width: 100%;
+  }
+
+  .main-sidebar {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
 }

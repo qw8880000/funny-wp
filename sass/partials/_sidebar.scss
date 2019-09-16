@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .sidebar-wrapper {
   display: inline-block;
 }
@@ -7,10 +9,15 @@
 }
 
 .sidebar-widget {
-  margin-bottom: 0.25rem;
+  margin-bottom: $margin-base / 4;
   padding: 0.5rem 0.8rem;
   background-color: $color-sidebar-widget;
   @include box-shadow-base();
+
+  > ul {
+    margin: 0;
+    padding-left: 1rem; //  补上li前的项目标号的缩进
+  }
 }
 
 // sidebar widget: categories
@@ -26,4 +33,10 @@
 // sidebar widget: meta
 //==================================
 .widget_meta {
+}
+
+/* ---------------- Breakpoint
+ */
+@include media-breakpoint-down(sm) {
+
 }

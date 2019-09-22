@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.post-navigation {
+  display: flex;
+  margin: $margin-base 0;
+  padding: 0.5rem 1rem;
+  background-color: $color-pagination-bg;
+  @include box-shadow-base();
+}
+
+.post-navigation-prev,
+.post-navigation-next {
+  width: 50%
+}
+
+.post-navigation-prev a,
+.post-navigation-next a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.post-navigation-next a {
+  text-align: right;
+}

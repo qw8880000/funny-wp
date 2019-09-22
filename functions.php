@@ -79,6 +79,7 @@ register_sidebar( array(
 
 /**
  * Pagination 分页
+ * 参考：the_posts_pagination() 函数
  */
 function funnywp_the_posts_navigation() {
     // the_posts_pagination();
@@ -97,6 +98,24 @@ function funnywp_the_posts_navigation() {
     }
 
     echo sprintf( $template, $page_items );
+}
+
+/**
+ * 上一篇文章，下一页文章
+ * 参考： the_post_navigation() 函数
+ */
+function funnywp_the_post_navigation() {
+    $template = '
+    <div class="post-navigation" role="navigation">
+        <div class="post-navigation-prev">%1$s</div>
+        <div class="post-navigation-next">%2$s</div>
+    </div>';
+
+    $previous = get_previous_post_link( '%link' );
+
+    $next = get_next_post_link( '%link' );
+
+    echo sprintf( $template, $previous, $next );
 }
 
 ?>

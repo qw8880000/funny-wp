@@ -31,8 +31,10 @@
             funnywp_the_posts_navigation();
             ?>
         <?php else: ?>
+            <?php
             // If no content, include the "No posts found" template.
-            // get_template_part( 'template-parts/content/content', 'none' );
+            get_template_part( 'template-parts/content/content', 'none' );
+            ?>
         <?php endif; ?>
     </div>
 

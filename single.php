@@ -15,13 +15,14 @@
     <div class="main-content">
         <?php
         // Load posts loop.
-        while (have_posts()) {
+        while (have_posts()):
             the_post();
             get_template_part('template-parts/content/content', 'single');
-        }
-        ?>
+        endwhile;
 
-        <?php funnywp_the_post_navigation(); ?>
+        funnywp_the_post_navigation();
+        ?>
+        
     </div>
 
     <?php get_sidebar(); ?>

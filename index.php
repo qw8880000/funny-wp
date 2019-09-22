@@ -18,23 +18,22 @@
 
 <section id="main" class="main">
     <div class="main-content">
-        <?php if ( have_posts() ) {
+        <?php if ( have_posts() ): ?>
 
+            <?php
             // Load posts loop.
-            while ( have_posts() ) {
+            while ( have_posts() ):
                 the_post();
                 get_template_part( 'template-parts/content/content', 'excerpt' );
-            }
+            endwhile;
 
             // Previous/next page navigation.
             funnywp_the_posts_navigation();
-        } else {
-
+            ?>
+        <?php else: ?>
             // If no content, include the "No posts found" template.
             // get_template_part( 'template-parts/content/content', 'none' );
-
-        }
-        ?>
+        <?php endif; ?>
     </div>
 
     <?php get_sidebar(); ?>

@@ -19,6 +19,8 @@ $padding-left-branding: 1.5rem;
   min-height: 5rem; // 保证无子元素时也有高度
   color: $color-header-fg;
   background-color: $color-header-bg;
+
+  @include box-shadow-base();
 }
 
 /*-------------------------------- Header Branding

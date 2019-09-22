@@ -3,7 +3,6 @@
 .post-navigation {
   display: flex;
   margin: $margin-base 0;
-  padding: 0.5rem 1rem;
   background-color: $color-pagination-bg;
   @include box-shadow-base();
 }
@@ -17,7 +16,11 @@
 .post-navigation-next a {
   display: inline-block;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: $color-pagination-item-bg-hover;
+  }
 }
 
 .post-navigation-next a {

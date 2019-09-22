@@ -111,9 +111,9 @@ function funnywp_the_post_navigation() {
         <div class="post-navigation-next">%2$s</div>
     </div>';
 
-    $previous = get_previous_post_link( '%link' );
+    $previous = get_previous_post_link( '%link', '< %title' );
 
-    $next = get_next_post_link( '%link' );
+    $next = get_next_post_link( '%link', '%title >' );
 
     echo sprintf( $template, $previous, $next );
 }

@@ -82,7 +82,7 @@ register_sidebar( array(
  * 参考：the_posts_pagination() 函数
  */
 function funnywp_the_posts_navigation() {
-    // the_posts_pagination();
+    $result = '';
     $template = '<div class="pagination-wrapper" role="navigation"><ul class="pagination">%1$s</ul></div>';
     $links = paginate_links( array(
         'type' => 'array',
@@ -91,13 +91,18 @@ function funnywp_the_posts_navigation() {
         'prev_text' => '<',
         'next_text' => '>',
     ) );
-    $page_items = '';
 
-    foreach( $links as $k => $v ) {
-        $page_items .= sprintf( '<li class="page-item">%1$s</li>', $v );
+    if ( $links ) {
+        $page_items = '';
+
+        foreach( $links as $k => $v ) {
+            $page_items .= sprintf( '<li class="page-item">%1$s</li>', $v );
+        }
+
+        $result = sprintf( $template, $page_items );
     }
 
-    echo sprintf( $template, $page_items );
+    echo $result;
 }
 
 /**
@@ -105,6 +110,7 @@ function funnywp_the_posts_navigation() {
  * 参考： the_post_navigation() 函数
  */
 function funnywp_the_post_navigation() {
+    $result = '';
     $template = '
     <div class="post-navigation" role="navigation">
         <div class="post-navigation-prev">%1$s</div>
@@ -112,10 +118,14 @@ function funnywp_the_post_navigation() {
     </div>';
 
     $previous = get_previous_post_link( '%link', '< %title' );
-
     $next = get_next_post_link( '%link', '%title >' );
 
-    echo sprintf( $template, $previous, $next );
+    // Only add markup if there's somewhere to navigate to.
+    if ( $previous || $next ) {
+        $result = sprintf( $template, $previous, $next );
+    }
+
+    echo $result;
 }
 
 ?>

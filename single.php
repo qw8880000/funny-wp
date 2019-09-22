@@ -22,7 +22,7 @@
 
         funnywp_the_post_navigation();
         ?>
-        
+
     </div>
 
     <?php get_sidebar(); ?>

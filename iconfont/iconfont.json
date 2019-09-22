@@ -1,0 +1,79 @@
+{
+  "id": "1345413",
+  "name": "wordpress",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5297120",
+      "name": "tag",
+      "font_class": "tag",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "5426564",
+      "name": "book-mark",
+      "font_class": "book-mark",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "6056158",
+      "name": "日历",
+      "font_class": "calendar",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "8776692",
+      "name": "message",
+      "font_class": "message",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "8777510",
+      "name": "arrow_left",
+      "font_class": "arrow-left",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "8777512",
+      "name": "arrow_right",
+      "font_class": "arrow-right",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "8777649",
+      "name": "social_sina",
+      "font_class": "social-weibo",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "8777654",
+      "name": "social_github",
+      "font_class": "social-github",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "8777657",
+      "name": "social_wechat",
+      "font_class": "social-wechat",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "9096739",
+      "name": "alipay",
+      "font_class": "social-alipay",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    }
+  ]
+}

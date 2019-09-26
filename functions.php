@@ -88,8 +88,8 @@ function funnywp_the_posts_navigation() {
         'type' => 'array',
         'end_size' => 1,
         'mid_size' => 2,
-        'prev_text' => '<',
-        'next_text' => '>',
+        'prev_text' => '<span class="iconfont icon-arrow-left"></span>',
+        'next_text' => '<span class="iconfont icon-arrow-right"></span>',
     ) );
 
     if ( $links ) {
@@ -117,8 +117,8 @@ function funnywp_the_post_navigation() {
         <div class="post-navigation-next">%2$s</div>
     </div>';
 
-    $previous = get_previous_post_link( '%link', '< %title' );
-    $next = get_next_post_link( '%link', '%title >' );
+    $previous = get_previous_post_link( '%link', '<span class="iconfont icon-arrow-left"></span> %title' );
+    $next = get_next_post_link( '%link', '%title  <span class="iconfont icon-arrow-right"></span>' );
 
     // Only add markup if there's somewhere to navigate to.
     if ( $previous || $next ) {

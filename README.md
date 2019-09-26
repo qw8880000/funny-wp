@@ -4,7 +4,7 @@ WordPress theme
 # Todo
 
   - [x] 首页无任何文章时，显示“暂无任何文章”
-  - [] 登陆过admin后，博客页面顶部显示admin的导航栏
+  - [x] 登陆过admin后，博客页面顶部显示admin的导航栏
   - [x] header
   - [x] header navigation
   - [x] header下阴影
@@ -13,7 +13,7 @@ WordPress theme
   - [x] single页面
   - [x] single文章页，显示上一篇文章，下一篇文章
   - [x] 只有一篇文章或者没有文章时，上一页下一页，分布的展示
-  - [] 使用箭头icon: pagination，post-navigation
+  - [x] 使用箭头icon: pagination，post-navigation
   - [] single文章页，显示版权声明
   - [x] category分类页面
   - [x] tag分类页面
@@ -23,3 +23,7 @@ WordPress theme
   - [] 代码高亮
   - [] 搜索框美化
   - [] 一键回到顶部按钮
+  - [] 多语言
+  - [] 浏览器兼容性
+  - [] 文章meta 提取出来
+  - [] 链接hover美化

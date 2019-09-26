@@ -15,15 +15,15 @@ WordPress theme
   - [x] 只有一篇文章或者没有文章时，上一页下一页，分布的展示
   - [x] 使用箭头icon: pagination，post-navigation
   - [] single文章页，显示版权声明
+  - [] search页面 
+  - [] 搜索框美化
+  - [] 一键回到顶部按钮
   - [x] category分类页面
   - [x] tag分类页面
-  - [] search页面 
   - [] 文章meta信息的icon加上颜色
   - [] 主题预览时显示编辑按钮
   - [] 代码高亮
-  - [] 搜索框美化
-  - [] 一键回到顶部按钮
   - [] 多语言
   - [] 浏览器兼容性
-  - [] 文章meta 提取出来
+  - [x] 文章meta 提取出来
   - [] 链接hover美化

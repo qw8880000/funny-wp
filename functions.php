@@ -1,6 +1,7 @@
 <?php
 /**
  * Funny WP functions and definitions
+ * Funny WP only works in WordPress 4.7 or later.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -10,9 +11,8 @@
  */
 
 /**
- * Funny WP only works in WordPress 4.7 or later.
+ *
  */
-
 function funnywp_scripts() {
     // style.css
     wp_enqueue_style( 'funnywp-style', get_stylesheet_uri() );
@@ -24,7 +24,6 @@ function funnywp_scripts() {
     wp_enqueue_script( 'funnywp-3th-transition-auto', get_template_directory_uri() . '/js/transition-auto.js', array(), '1.1', false );
     wp_enqueue_script( 'funnywp-header-nav', get_template_directory_uri() . '/js/header-nav.js', array('funnywp-3th-transition-auto'), '1.1', false );
 }
-
 //add_action( 'wp_head', 'funnywp_add_scripts' );
 add_action( 'wp_enqueue_scripts', 'funnywp_scripts' );
 
@@ -127,5 +126,10 @@ function funnywp_the_post_navigation() {
 
     echo $result;
 }
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
 
 ?>

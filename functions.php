@@ -14,7 +14,7 @@ if ( ! function_exists( 'funnywp_setup' ) ) :
     function funnywp_setup() {
 
         // Make theme available for translation.
-        load_theme_textdomain( 'funny_wp', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'funnywp', get_template_directory() . '/languages' );
     }
 endif;
 add_action( 'after_setup_theme', 'funnywp_setup' );

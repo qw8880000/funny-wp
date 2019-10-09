@@ -13,7 +13,7 @@
         </div>
     <?php endif ?>
 
-    <div class="post-create_time">
+    <div class="post-create-time">
         <span class="iconfont icon-calendar"></span>
         <?php /*the_time('Y-m-d H:i:s'); */?>
         <?php the_time('Y-m-d'); ?>

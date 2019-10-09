@@ -14,7 +14,8 @@ WordPress theme
   - [x] single文章页，显示上一篇文章，下一篇文章
   - [x] 只有一篇文章或者没有文章时，上一页下一页，分布的展示
   - [x] 使用箭头icon: pagination，post-navigation
-  - [] single文章页，显示版权声明
+  - [x] single文章页，显示版权声明
+  - [] 版权声明可配置是否显示 
   - [] search页面 
   - [] 搜索框美化
   - [] 一键回到顶部按钮

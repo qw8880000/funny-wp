@@ -1,4 +1,4 @@
-# Funny_WP
+# Funny WP
 WordPress theme
 
 # Todo

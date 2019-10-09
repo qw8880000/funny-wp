@@ -2,8 +2,7 @@
 /**
  * The template part for displaying a message that posts cannot be found
  *
- * @package WordPress
- * @subpackage Funny_WP
+ * @package Funny WP
  * @since 1.0.0
  */
 ?>

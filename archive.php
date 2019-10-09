@@ -11,8 +11,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WordPress
- * @subpackage Funny_WP
+ * @package Funny WP
  * @since 1.0.0
  */
 ?>

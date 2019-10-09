@@ -5,8 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WordPress
- * @subpackage Funny_WP
+ * @package Funny WP
  * @since 1.0.0
  */
 

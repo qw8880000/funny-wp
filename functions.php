@@ -9,15 +9,26 @@
  * @since 1.0.0
  */
 
-if ( ! function_exists( 'funnywp_setup' ) ) :
-    function funnywp_setup() {
 
-        // Make theme available for translation.
-        load_theme_textdomain( 'funnywp', get_template_directory() . '/languages' );
-    }
-endif;
+function funnywp_setup() {
+
+    // Make theme available for translation.
+    load_theme_textdomain( 'funnywp', get_template_directory() . '/languages' );
+
+    /*
+     * Switch default core markup for search form, comment form, and comments
+     * to output valid HTML5.
+     */
+    add_theme_support( 'html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+    ) );
+}
+
 add_action( 'after_setup_theme', 'funnywp_setup' );
-
 
 /**
  *
@@ -46,7 +57,8 @@ register_nav_menus(
         'footer-nav' => __( 'Footer Nav', 'funnywp' )
     )
 );
-function nav_item_css_class_filter( $classes, $item, $args, $depth ) {
+//function nav_item_css_class_filter( $classes, $item, $args, $depth ) {
+function nav_item_css_class_filter( $classes ) {
     array_push( $classes, 'header-nav-menu-item' );
     return $classes;
 }

@@ -27,4 +27,4 @@ WordPress theme
   - [x] 多语言
   - [] 浏览器兼容性
   - [x] 文章meta 提取出来
-  - [] 链接hover美化
+  - [x] 链接hover美化

@@ -7,15 +7,25 @@
   },
   "homepage": "https://github.com/qw8880000/funny-wp#readme",
   "scripts": {
-    "build:style": "node-sass style.scss style.css --output-style expanded && postcss -r style.css",
+    "build:style": "node-sass style.scss style.css --output-style expanded && postcss --use autoprefixer -r style.css",
     "build": "run-p \"build:*\"",
     "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
   },
   "browserslist": [
-    "extends @wordpress/browserslist-config"
+    "> 1%",
+    "ie >= 10",
+    "last 1 Android versions",
+    "last 1 ChromeAndroid versions",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions"
   ],
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.5.0",
+    "autoprefixer": "^9.7.0",
     "browserslist": "^4.6.4",
     "chokidar-cli": "^1.2.2",
     "node-sass": "^4.12.0",

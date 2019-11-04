@@ -137,12 +137,12 @@ function funnywp_the_post_navigation() {
         <div class="post-navigation-next">%2$s</div>
     </div>';
 
-    $previous = get_previous_post_link( '%link', '<span class="iconfont icon-arrow-left"></span> %title' );
-    $next = get_next_post_link( '%link', '%title  <span class="iconfont icon-arrow-right"></span>' );
+    $previous = get_previous_post_link( '%link', '%title  <span class="iconfont icon-arrow-right"></span>' );
+    $next = get_next_post_link( '%link', '<span class="iconfont icon-arrow-left"></span> %title' );
 
     // Only add markup if there's somewhere to navigate to.
     if ( $previous || $next ) {
-        $result = sprintf( $template, $previous, $next );
+        $result = sprintf( $template, $next, $previous );
     }
 
     echo $result;

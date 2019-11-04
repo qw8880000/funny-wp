@@ -9,7 +9,7 @@
 }
 
 .sidebar-widget {
-  margin-bottom: $margin-base / 4;
+  margin-bottom: $margin-base;
   padding: 0.5rem 0.8rem;
   background-color: $color-sidebar-widget;
   @include box-shadow-base();

@@ -28,3 +28,4 @@ WordPress theme
   - [x] 浏览器兼容性
   - [x] 文章meta 提取出来
   - [x] 链接hover美化
+  - []文章页 - image

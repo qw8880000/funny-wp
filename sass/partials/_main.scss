@@ -1,6 +1,7 @@
-$main-content-witdh: 45rem;
+$main-content-witdh: 50rem;
 $main-sidebar-width: 20rem;
-$main-width: $main-content-witdh + $main-sidebar-width + $margin-base;
+$margin-sidebar-content: $margin-base * 4;
+$main-width: $main-content-witdh + $main-sidebar-width + $margin-sidebar-content;
 
 .main {
   /* the flex item setting of body */
@@ -17,7 +18,7 @@ $main-width: $main-content-witdh + $main-sidebar-width + $margin-base;
 }
 
 .main-sidebar {
-  margin-left: $margin-base;
+  margin-left: $margin-sidebar-content;
   width: $main-sidebar-width;
 }
 

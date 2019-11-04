@@ -9,33 +9,35 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WordPress
- * @subpackage Funny_WP
+ * @package Funny WP
  * @since 1.0.0
  */
 ?>
 <?php get_header(); ?>
 
-<section id="main" class="main cd-main-content">
-    <?php if ( have_posts() ) {
+<section id="main" class="main">
+    <div class="main-content">
+        <?php if ( have_posts() ): ?>
 
-        // Load posts loop.
-        while ( have_posts() ) {
-            the_post();
-            get_template_part( 'template-parts/content/content' );
-        }
+            <?php
+            // Load posts loop.
+            while ( have_posts() ):
+                the_post();
+                get_template_part( 'template-parts/content/content', 'excerpt' );
+            endwhile;
 
-        // Previous/next page navigation.
-        // twentynineteen_the_posts_navigation();
+            // Previous/next page navigation.
+            funnywp_the_posts_navigation();
+            ?>
+        <?php else: ?>
+            <?php
+            // If no content, include the "No posts found" template.
+            get_template_part( 'template-parts/content/content', 'none' );
+            ?>
+        <?php endif; ?>
+    </div>
 
-    } else {
-
-        // If no content, include the "No posts found" template.
-        // get_template_part( 'template-parts/content/content', 'none' );
-
-    }
-    ?>
-    </main>
+    <?php get_sidebar(); ?>
 </section>
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

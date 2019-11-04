@@ -1,3 +1,45 @@
+$main-content-witdh: 45rem;
+$main-sidebar-width: 20rem;
+$main-width: $main-content-witdh + $main-sidebar-width + $margin-base;
+
 .main {
+  /* the flex item setting of body */
   flex: 1 0 auto;
+
+  display: flex;
+  width: $main-width;
+  align-items: flex-start;
+  margin: 1.5rem auto;
+}
+
+.main-content {
+  width: $main-content-witdh;
+}
+
+.main-sidebar {
+  margin-left: $margin-base;
+  width: $main-sidebar-width;
+}
+
+/* ---------------- Breakpoint
+ */
+
+//@include media-breakpoint-down(md) {
+@media (max-width: $main-width) {
+  .main {
+    display: block;
+    width: auto;
+    margin: 1.5rem 0.8rem;
+  }
+
+  .main-content {
+    display: block;
+    width: 100%;
+  }
+
+  .main-sidebar {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
 }

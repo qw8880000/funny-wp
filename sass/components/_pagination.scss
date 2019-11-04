@@ -1,0 +1,37 @@
+.pagination-wrapper {
+  display: block;
+  margin: $margin-base 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: $color-pagination-bg;
+  @include box-shadow-base();
+}
+
+ul.pagination {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.page-item {
+  display: inline-block;
+  // background-color: $color-pagination-item-bg;
+
+  &:not(:first-child) {
+    margin-left: 2px;
+  }
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: $color-pagination-item-bg-hover;
+  }
+
+  &.current {
+    background-color: $color-pagination-item-bg-current;
+  }
+}

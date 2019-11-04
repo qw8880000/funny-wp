@@ -1,6 +1,6 @@
 /*
 Theme Name: Funny WP
-Theme URI: https://github.com/qw8880000/funny_wp
+Theme URI: https://github.com/qw8880000/funny-wp
 Author: qw8880000
 Author URI: http://blog.wangjinle.com
 Description:
@@ -8,8 +8,8 @@ Requires at least: WordPress 4.9.6
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: funny_wp
-Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: funnywp
+Tags: two-column, right-sidebar, flexible-header, accessibility-ready, custom-menu, featured-images, footer-widgets, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -23,12 +23,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * =========================================================================*/
 @import "sass/helpers/variables";
 
-/* ==========================================================================
- * Vendors
- * =========================================================================*/
-@import "sass/vendors/bootstrap/bootstrap-custom";
-@import "sass/vendors/hamburgers/hamburgers";
+@import "sass/helpers/vendors/bootstrap/bootstrap-custom";
+@import "sass/helpers/vendors/hamburgers/hamburgers";
+@import "sass/helpers/vendors/material-shadows/material-shadows";
 
+@import "sass/helpers/mixins";
 
 /* ==========================================================================
  * Elements
@@ -38,6 +37,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* ==========================================================================
  * Components
  * =========================================================================*/
+@import "sass/components/pagination";
+@import "sass/components/post-navigation";
 
 /* ==========================================================================
  * Partials
@@ -45,8 +46,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "sass/partials/header";
 @import "sass/partials/footer";
 @import "sass/partials/main";
+@import "sass/partials/post";
+@import "sass/partials/sidebar";
+@import "sass/partials/content-none";
 
 /* ==========================================================================
  * Pages
  * =========================================================================*/
-@import "sass/pages/default";
+@import "sass/pages/index";

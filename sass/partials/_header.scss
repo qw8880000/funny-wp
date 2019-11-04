@@ -11,14 +11,17 @@ $padding-left-branding: 1.5rem;
 /*-------------------------------- Header
  */
 .header {
-  /* the flex item setting of .blog */
+  /* the flex item setting of body */
   flex: 0 0 auto;
 
   display: flex;
   align-items: center;
+  width: 100%;
   min-height: 5rem; // 保证无子元素时也有高度
   color: $color-header-fg;
   background-color: $color-header-bg;
+
+  @include box-shadow-base();
 }
 
 /*-------------------------------- Header Branding
@@ -107,6 +110,7 @@ li.header-nav-menu-item {
 
   .header-nav {
     height: 0;
+    overflow: hidden;
 
     transition: height 0.4s ease-in-out;
   }

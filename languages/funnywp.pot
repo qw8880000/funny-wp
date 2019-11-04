@@ -1,0 +1,23 @@
+
+msgid "Nothing Found"
+msgstr ""
+
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+msgid "Search Results for: %s"
+msgstr ""
+
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""

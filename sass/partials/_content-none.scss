@@ -1,0 +1,7 @@
+.content-none-wrapper {
+  margin-bottom: $margin-base;
+  padding: 1rem;
+  background-color: $color-post-bg;
+
+  @include box-shadow-base();
+}

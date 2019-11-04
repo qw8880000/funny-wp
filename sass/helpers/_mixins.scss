@@ -1,0 +1,12 @@
+@mixin box-shadow-base() {
+  @include z-depth-2dp();
+  @include z-depth-transition();
+}
+
+@mixin box-shadow-base-with-hover() {
+  @include z-depth-2dp();
+  @include z-depth-transition();
+  &:hover {
+    @include z-depth-4dp();
+  }
+}

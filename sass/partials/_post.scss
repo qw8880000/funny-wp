@@ -1,0 +1,34 @@
+.post {
+  margin-bottom: $margin-base;
+  padding: 1rem;
+  background-color: $color-post-bg;
+
+  @include box-shadow-base();
+}
+
+.post-title {
+  font-size: $font-size-post-title;
+}
+
+.post-meta {
+  margin-bottom: 1rem;
+}
+
+.post-tags {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.post-categories {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.post-create-time {
+  display: inline-block;
+}
+
+.post-copyright {
+  padding: 1rem;
+  background-color: $color-post-copyright-bg;
+}

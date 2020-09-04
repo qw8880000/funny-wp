@@ -28,7 +28,7 @@
     "autoprefixer": "^9.7.0",
     "browserslist": "^4.6.4",
     "chokidar-cli": "^1.2.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.1.3"
   },
